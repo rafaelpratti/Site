@@ -70,3 +70,16 @@ footer {
     height: 100px;
     margin-bottom: 5vh;
 }
+
+fieldset{
+    margin-top: 3vh;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 8px;
+    box-shadow: 1px;
+    height: 2em;
+}

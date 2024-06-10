@@ -91,7 +91,10 @@ input[type="button"]{
     color: white;
 }
 
-input[type="button"]{
+button[type="submit"]{
     background-color: #246219;
     color: white;
+    border-radius: 8px;
+    box-shadow: 1px;
+    height: 2.5em;
 }

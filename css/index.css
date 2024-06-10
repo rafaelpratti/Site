@@ -7,12 +7,10 @@
 
 
 header{
-    min-height: 50px;
-    max-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     background-color: #246219;
     font-size: 1em;
 }
@@ -51,6 +49,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 0.2em;
+    position: fixed;
    
  }
 
@@ -89,7 +88,6 @@ p{
 .sec3{
     display: flex;
     justify-content: center;
-    margin-bottom: 30vh;
 }
 
 .img{

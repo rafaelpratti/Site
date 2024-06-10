@@ -7,12 +7,10 @@
 
 
 header{
-    min-height: 50px;
-    max-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     background-color: #246219;
     font-size: 1em;
 }
@@ -51,6 +49,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 0.2em;
+    position: fixed;
 }
 
 .sec1 {
@@ -64,8 +63,6 @@ footer {
 .sec1 > div{
     display: flex;
     flex-direction: column;
-    margin-bottom: 3vh;
-
 }
 
 .sec1 > img {
@@ -86,4 +83,13 @@ input{
     height: 2.5em;
 }
 
+input[type="button"]{
+    background-color: #246219;
+    color: white;
+}
 
+div > img{
+    height: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

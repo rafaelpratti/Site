@@ -6,11 +6,10 @@
 }
 
 header{
-    max-height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     background-color: #246219;
     font-size: 1em;
 }

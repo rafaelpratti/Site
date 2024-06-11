@@ -13,7 +13,7 @@
         <a href="index.html" class="logo"><img src="img/loguin.png" alt=""></a>
         <nav>       
             <ul class="menu">
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html">Entrar</a></li>
                 <li><a href="cadastrar.html">Cadastrar</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -24,27 +24,28 @@
     <!--CONTEUDO PRINCIPAL-->
         <section class="sec1">
             <img src="img/contato.png">
-        <div>
+            <div>
             <h1>Entre em contato conosco:</h1>
-            <form id="formcontato">
+            <form action="">
                 <fieldset>
+
                 <label for="nome">Nome: </label>
                 <input type="text" id="nome" class="text"name="fname"><br><br>
                 <label for="email">Email: </label>
-                <input type="text" id="email" class="text" name="email"><br><br>
+                <input type="email" id="email" class="text" name="email"><br><br>
                 <label for="contato">Contato: </label>
                 <input type="text" id="contato" class="text" name="contato"><br><br>
                 <label for="mensagem">Mensagem: </label>
                 <input type="text" id="mensagem" class="mensagem" name="mensagem"><br><br> 
-
-                <button type="submit" id="bot_entrar" class="Enviar" value="Enviar" onclick="VerificaCampos()">Enviar
-                </fieldset>
+                <button type="submit" class="Enviar">Enviar</button>
+                
+            </fieldset>
                 
             </form>
         </div>
         </section>
 
-    <script src="js/contato.js"></script>
+
     <!--RODAPE-->
     <footer class="footer">
         ©2024 todos os direitos reservados!

@@ -1,4 +1,4 @@
-function validarForm(event) {
+function validarFormSenha(event) {
     // Evita que o formulário seja enviado automaticamente
     event.preventDefault();
 

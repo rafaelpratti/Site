@@ -94,5 +94,5 @@ button[type="submit"]{
 div > img{
     height: 150px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 5px;
 }

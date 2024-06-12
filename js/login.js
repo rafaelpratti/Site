@@ -10,14 +10,10 @@ function validarForm(event) {
     if (senha === "" || email === "") {
         alert("Por favor, preencha todos os campos.");
     } else {
-        // Se todos os campos estiverem preenchidos, o formulário será enviado
-        event.target.submit();
+        // Se todos os campos estiverem preenchidos, redireciona para a página 'cursos.html'
+        window.location.href = 'cursos.html';
     }
 }
 
 // Adicionando o evento de submit ao formulário
 document.getElementById("formlogin").addEventListener("submit", validarForm);
-
-document.getElementById('bot_entrar').addEventListener('submit', function() {
-    window.location.href = 'cursos.html'; // Direciona para a página 'cursos.html'
-})

@@ -17,3 +17,7 @@ function validarForm(event) {
 
 // Adicionando o evento de submit ao formulário
 document.getElementById("formlogin").addEventListener("submit", validarForm);
+
+document.getElementById('bot_entrar').addEventListener('submit', function() {
+    window.location.href = 'cursos.html'; // Direciona para a página 'cursos.html'
+})

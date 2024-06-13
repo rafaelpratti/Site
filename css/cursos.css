@@ -1,16 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #246219;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    padding: 0.4em;
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.logo{
+    padding-top: 10px;
+    max-height: 4em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #011f0b;
+    color: white;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.2em;
+    position: fixed;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c5c5c5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
 }
 
 .modal-container {
@@ -64,7 +126,7 @@ h2 {
 }
 
 .next-button {
-    background-color: #3b82f6;
+    background-color: #246219;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -74,5 +136,5 @@ h2 {
 }
 
 .next-button:hover {
-    background-color: #2563eb;
+    background-color: #246219;
 }

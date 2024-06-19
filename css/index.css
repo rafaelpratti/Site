@@ -1,11 +1,13 @@
+/* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* ------------------------------------------------ */
 
-
+/* CSS do menu superior */
 header{
     display: flex;
     justify-content: space-between;
@@ -38,7 +40,9 @@ ul,li{
     padding-top: 10px;
     max-height: 4em;
 }
+/*----------------------------------------------*/
 
+/* CSS do rodapé */
 footer {
     display: flex;
     flex-direction: column;
@@ -51,13 +55,17 @@ footer {
     padding: 0.2em;
     position: fixed; 
  }
+/*----------------------------------------------*/
 
+/* CSS do body */
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+/*----------------------------------------------*/
 
+/* CSS do conteúdo */
 .sec1{
     padding-top: 0vh;
     display: flex;
@@ -113,3 +121,5 @@ h4{
     width: 100px;
     height: auto;
 }
+
+/*----------------------------------------------*/

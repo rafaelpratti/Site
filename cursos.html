@@ -21,22 +21,24 @@
     </header>
 
 
-    <div class="modal-container" id="modal">
-        <div class="modal">
-            <button class="close-button" id="close-button">&times;</button>
-            <h2>Escolha um ou mais cursos</h2>
-            <div class="checkbox-container">
-                <label>
-                    <input type="checkbox" value="Lógica"> Lógica
-                </label>
-                <label>
-                    <input type="checkbox" value="Python"> Python
-                </label>
-            </div>
-            <button class="next-button" id="next-button">Next</button>
+    <div id="popup">
+        <div id="popup-content">
+            <h2>Escolha seus cursos</h2>
+            <form id="courses-form">
+                <label><input type="checkbox" name="courses" value="Lógica">Lógica</label><br>
+                <label><input type="checkbox" name="courses" value="Python">Python</label><br>
+                <button type="button" onclick="submitCourses()">Salvar</button>
+            </form>
         </div>
     </div>
-    <div id="selected-courses"></div>
+
+    <div class="container">
+        <h1>Meus Cursos</h1>
+        <div class="courses" id="courses-container">
+            <!-- Cursos serão adicionados aqui -->
+        </div>
+        <div id="add-course" onclick="showPopup()">Adicionar outro curso</div>
+    </div>
 
     <script src="js/cursos.js"></script>
     <footer class="footer">

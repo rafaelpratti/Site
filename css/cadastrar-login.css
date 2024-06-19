@@ -1,11 +1,14 @@
+/*Css usado para as páginas de login e cadastro simultaneamente*/
+/* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* ------------------------------------------------ */
 
-
+/* CSS do menu superior */
 header{
     display: flex;
     justify-content: space-between;
@@ -38,7 +41,9 @@ ul,li{
     padding-top: 10px;
     max-height: 4em;
 }
+/*----------------------------------------------*/
 
+/* CSS do rodapé */
 footer {
     display: flex;
     flex-direction: column;
@@ -51,7 +56,9 @@ footer {
     padding: 0.2em;
     position: fixed;
 }
+/* --------------------------------------------- */
 
+/* CSS do conteúdo em texto */
 .sec1 {
     display: flex;
     flex-direction: column;
@@ -69,7 +76,9 @@ footer {
     height: 100px;
     margin-bottom: 5vh;
 }
+/*---------------------------------------------*/
 
+/*CSS do formulário*/
 fieldset{
     margin-top: 3vh;
     border: none;
@@ -96,3 +105,4 @@ div > img{
     padding-left: 50px;
     padding-right: 50px;
 }
+/*---------------------------------------------*/

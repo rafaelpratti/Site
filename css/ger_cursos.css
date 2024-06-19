@@ -1,11 +1,13 @@
+/* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* ------------------------------------------------ */
 
-
+/* CSS do menu superior */
 header{
     display: flex;
     justify-content: space-between;
@@ -38,7 +40,9 @@ ul,li{
     padding-top: 10px;
     max-height: 4em;
 }
+/* ------------------------------------------------ */
 
+/* CSS do rodapé */
 footer {
     display: flex;
     flex-direction: column;
@@ -51,15 +55,18 @@ footer {
     padding: 0.2em;
     position: fixed;
 }
+/* ------------------------------------------------ */
 
-
+/* CSS do body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+/* ------------------------------------------------ */
 
+/* CSS do conteúdo */
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -104,9 +111,7 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
-    background-color: #218838;
-}
+
 
 ul {
     list-style-type: none;
@@ -124,6 +129,11 @@ li button {
     margin-right: 5px;
 }
 
+/* Css para mudar cor dos botões*/
+button:hover {
+    background-color: #218838;
+}
+
 li button:hover {
     background-color: #0056b3;
 }
@@ -135,3 +145,4 @@ li button.delete {
 li button.delete:hover {
     background-color: #c82333;
 }
+/* ------------------------------------------------ */

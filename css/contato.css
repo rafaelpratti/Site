@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*----------------------------------------------*/
 
 
 header{
@@ -14,6 +15,7 @@ header{
     background-color: #246219;
     font-size: 1em;
 }
+
 
 a{
     text-decoration: none;
@@ -38,6 +40,7 @@ ul,li{
     padding-top: 10px;
     max-height: 4em;
 }
+/*----------------------------------------------*/
 
 footer {
     display: flex;
@@ -51,7 +54,9 @@ footer {
     padding: 0.2em;
     position: fixed;
 }
+/*----------------------------------------------*/
 
+/*Organização das sections*/
 .sec1 {
     display: flex;
     flex-direction: column;
@@ -69,7 +74,9 @@ footer {
     height: 100px;
     margin-bottom: 5vh;
 }
+/*----------------------------------------------*/
 
+/*Css do formulário*/
 fieldset{
     margin-top: 3vh;
     border: none;
@@ -99,3 +106,4 @@ button[type="submit"]{
     box-shadow: 1px;
     height: 2.5em;
 }
+/* --------------------------------------------- */

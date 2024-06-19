@@ -1,11 +1,13 @@
+/* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* ------------------------------------------------ */
 
-
+/* CSS do menu superior */
 header{
     display: flex;
     justify-content: space-between;
@@ -38,7 +40,9 @@ ul,li{
     padding-top: 10px;
     max-height: 4em;
 }
+/*----------------------------------------------*/
 
+/* CSS do rodapé */
 footer {
     display: flex;
     flex-direction: column;
@@ -51,13 +55,17 @@ footer {
     padding: 0.2em;
     position: fixed;
  }
+/* --------------------------------------------- */
 
+/* CSS do Body */
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+/*--------------------------*/
 
+/* CSS do conteúdo em texto */
 .sec1{
     display: flex;
     flex-direction: column;
@@ -93,11 +101,35 @@ h4{
 
 .sec2 > div > p{
     text-align: center;
-}    
+}
+/*---------------------------------------------*/
 
+
+/* CSS das fotos */
 .sec3{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
+.equipe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.equipe > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.equipe > div > img{
+    height: 40vh;
+    border-radius: 8px;
+}
+/* -------------------------------------------------- */

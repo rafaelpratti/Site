@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciamento de Cursos - Trilingo</title>
+    <title>Escolha de Cursos</title>
     <link rel="stylesheet" href="css/cursos.css">
 </head>
 <body>
+
     <header>
         <a href="index.html" class="logo"><img src="img/loguin.png" alt=""></a>
         <nav>       
@@ -18,28 +19,28 @@
             </ul>
         </nav>
     </header>
-    
-    <div class="container">
-        <h1>Gerenciamento de Cursos - Trilingo</h1>
 
-        <form id="courseForm">
-            <h2 id="formTitle">Adicionar Curso</h2>
-            <input type="hidden" id="courseId">
-            <div class="form-group">
-                <label for="courseName">Nome do Curso</label>
-                <input type="text" id="courseName" required>
-            </div>
-            <div class="form-group">
-                <label for="courseDescription">Descrição do Curso</label>
-                <textarea id="courseDescription" required></textarea>
-            </div>
-            <button type="submit" id="submitBtn">Adicionar Curso</button>
-        </form>
 
-        <h2>Cursos Existentes</h2>
-        <ul id="courseList"></ul>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-button" id="close-button">&times;</button>
+            <h2>Escolha um ou mais cursos</h2>
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" value="Lógica"> Lógica
+                </label>
+                <label>
+                    <input type="checkbox" value="Python"> Python
+                </label>
+            </div>
+            <button class="next-button" id="next-button">Next</button>
+        </div>
     </div>
+    <div id="selected-courses"></div>
 
     <script src="js/cursos.js"></script>
+    <footer class="footer">
+        ©2024 todos os direitos reservados!
+    </footer>
 </body>
 </html>

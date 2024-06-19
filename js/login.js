@@ -11,7 +11,7 @@ function validarForm(event) {
         alert("Por favor, preencha todos os campos.");
     } else {
         // Se todos os campos estiverem preenchidos, redireciona para a página 'cursos.html'
-        window.location.href = 'cursos.html';
+        window.location.href = 'ger_cursos.html';
     }
 }
 

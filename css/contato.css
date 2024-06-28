@@ -88,6 +88,7 @@ input{
     border-radius: 8px;
     box-shadow: 1px;
     height: 2.5em;
+    margin-bottom: 1.5em;
 }
 
 input[type="text"]{
@@ -105,5 +106,6 @@ button[type="submit"]{
     border-radius: 8px;
     box-shadow: 1px;
     height: 2.5em;
+    margin-top: 1.5em;
 }
 /* --------------------------------------------- */

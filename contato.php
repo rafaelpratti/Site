@@ -10,7 +10,7 @@
     <!--CABEÇALHO-->
     <header>
 
-        <a href="index.html" class="logo"><img src="img/loguin.png" alt=""></a>
+        <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
         <nav>       
             <ul class="menu">
                 <li><a href="login.php">Entrar</a></li>

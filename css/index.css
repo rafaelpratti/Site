@@ -1,125 +1,119 @@
-/* Reset CSS */
-*{
-    margin: 0;
+/* Estilos gerais */
+body {
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
-/* ------------------------------------------------ */
 
-/* CSS do menu superior */
-header{
+/* Menu */
+header nav ul {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #246219;
-    font-size: 1em;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1rem;
 }
 
-a{
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: rgb(255, 255, 255)
-}
-
-.menu{
-    display: flex;
-}
-
-.menu li a{
-    padding: 0.4em;
-    text-decoration: none;
-}
-
-ul,li{
-    list-style: none;
     font-size: 1.2rem;
 }
 
-.logo{
-    padding-top: 10px;
-    max-height: 4em;
+/* Barra de Acessibilidade */
+#accessibility-bar {
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    width: 200px;
 }
-/*----------------------------------------------*/
 
-/* CSS do rodapé */
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #011f0b;
-    color: white;
+.accessibility-box {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
     text-align: center;
-    left: 0;
-    bottom: 0;
+}
+
+.accessibility-box h2 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Botões quadrados */
+.square-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.square-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Botão Redefinir */
+.reset-button {
+    margin-top: 10px;
     width: 100%;
-    padding: 0.2em;
-    position: fixed; 
- }
-/*----------------------------------------------*/
-
-/* CSS do body */
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-/*----------------------------------------------*/
-
-/* CSS do conteúdo */
-.sec1{
-    padding-top: 0vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-span{
-    background-color: #246219;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333;
     color: white;
-    border-radius: 0.6em;
-    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-p{
-    text-align: center;
-    padding-bottom: 1vh;
+.reset-button:hover {
+    background-color: #555;
 }
 
-.sec2{
-    padding-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Ajuste de Contraste */
+body.contrast-yellow {
+    background-color: yellow;
+    color: black;
 }
 
-.sec3{
-    display: flex;
-    justify-content: center;
+body.contrast-blue {
+    background-color: blue;
+    color: white;
 }
 
-.img{
-    padding:0.4em 7.5em;
+body.contrast-black {
+    background-color: black;
+    color: yellow;
 }
 
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    #accessibility-bar {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px 0;
+        width: 100%;
+    }
 
-.sec1 > img{
-    height: 200px;
+    .accessibility-box {
+        border-radius: 0;
+    }
+
+    .square-button {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+        line-height: 45px;
+    }
 }
-
-h4{
-    text-align: center;
-}
-
-.a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-}
-
-.i{
-    width: 100px;
-    height: auto;
-}
-
-/*----------------------------------------------*/

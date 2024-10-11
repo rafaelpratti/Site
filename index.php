@@ -17,6 +17,7 @@
                 <li><a href="cadastrar.php">Cadastrar</a></li>
                 <li><a href="sobre.php">Sobre</a></li>
                 <li><a href="contato.php">Contato</a></li>
+                <li><a href="download.php">Download</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +44,6 @@
         <img src="img/what’s-the-best-programming-language-to-learn-first.png" alt="">
         <p>Aprenda programação de forma interativa <br> 
         Baixe nosso aplicativo e comece sua jornada de aprendizado!</p>
-        <span><a href="download.php">Baixe agora</a></span>
     </section>
     
     <section class="sec2">

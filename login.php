@@ -18,6 +18,7 @@
                 <li><a href="cadastrar.php">Cadastrar</a></li>
                 <li><a href="sobre.php">Sobre</a></li>
                 <li><a href="contato.php">Contato</a></li>
+                <li><a href="download.php">Download</a></li>
             </ul>
         </nav>
     </header>

@@ -22,7 +22,7 @@ function validarFormSenha(event) {
     }
 
     // Se todos os campos estiverem preenchidos e as senhas coincidirem ou ambas estiverem vazias, o formulário será enviado
-    window.location.href = 'cursos.html';
+    window.location.href = 'cursos.php';
 }
 
 // Adicionando o evento de submit ao formulário

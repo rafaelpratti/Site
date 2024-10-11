@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo"><img src="img/loguin.png" alt=""></a>
+        <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
         <nav>       
             <ul class="menu">
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastrar.html">Cadastrar</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="cadastrar.php">Cadastrar</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="contato.php">Contato</a></li>
             </ul>
         </nav>
     </header>

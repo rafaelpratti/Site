@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciamento de Cursos - Trilingo</title>
+    <title>Gerenciamento de Cursos - Code Quest</title>
     <link rel="stylesheet" href="css/ger_cursos.css">
 </head>
 

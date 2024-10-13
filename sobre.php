@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trilingo -- App para aprender programação</title>
+    <title>Code Quest</title>
     <link rel="stylesheet" href="css/sobre.css">
 </head>
 

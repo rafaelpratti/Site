@@ -17,3 +17,16 @@ function validarForm(event) {
 
 // Adicionando o evento de submit ao formulário
 document.getElementById("formlogin").addEventListener("submit", validarForm);
+
+// Adicionando eventos aos botões
+document.getElementById('increase-font').addEventListener('click', increaseFont);
+document.getElementById('decrease-font').addEventListener('click', decreaseFont);
+document.getElementById('reset').addEventListener('click', resetFontAndContrast);
+
+document.getElementById('contrast-normal').addEventListener('click', () => setContrast(''));
+document.getElementById('contrast-yellow').addEventListener('click', () => setContrast('contrast-yellow'));
+document.getElementById('contrast-blue').addEventListener('click', () => setContrast('contrast-blue'));
+document.getElementById('contrast-black').addEventListener('click', () => setContrast('contrast-black'));
+
+// Carregar configurações ao iniciar
+window.onload = loadSettings;

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Cursos - Trilingo</title>
     <link rel="stylesheet" href="css/ger_cursos.css">
 </head>
+
 <body>
     <header>
         <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
-        <nav>       
+        <nav>
             <ul class="menu">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastrar.php">Cadastrar</a></li>
@@ -19,7 +21,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="container">
         <h1>Gerenciamento de Cursos - Trilingo</h1>
 
@@ -46,4 +48,5 @@
         ©2024 todos os direitos reservados!
     </footer>
 </body>
+
 </html>

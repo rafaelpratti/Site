@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilingo -- App para aprender programação</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
 
@@ -21,7 +23,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <aside id="accessibility-bar">
         <div class="accessibility-box">
             <h2>Acessibilidade</h2>
@@ -42,23 +44,27 @@
 
     <section class="sec1">
         <img src="img/what’s-the-best-programming-language-to-learn-first.png" alt="">
-        <p>Aprenda programação de forma interativa <br> 
-        Baixe nosso aplicativo e comece sua jornada de aprendizado!</p>
+        <p>Aprenda programação de forma interativa <br>
+            Baixe nosso aplicativo e comece sua jornada de aprendizado!</p>
     </section>
-    
+
     <section class="sec2">
         <p>Como o TRILINGO funciona?</p>
     </section>
 
     <section class="sec3">
-        <div class="img"> <div class="a"><img class="i"  src="img/personalized_learning_icon.png" alt="">
-            <h4>Aprendizagem personalizada</h4>
-            <p>Os alunos praticam no próprio ritmo, solucionando primeiramente suas dificuldades de compreensão e, depois, acelerando o aprendizado.</p></div>
-       </div>
-        <div class="img"><div class="a"><img class="i"  src="img/empower_teachers_icon.png" alt="">
-            <h4>Feedback instantâneo</h4>
-            <p>Os alunos recebem automaticamente a correção dos exercícios, descobrindo os seus erros e acertos.</p>
-        </div></div>
+        <div class="img">
+            <div class="a"><img class="i" src="img/personalized_learning_icon.png" alt="">
+                <h4>Aprendizagem personalizada</h4>
+                <p>Os alunos praticam no próprio ritmo, solucionando primeiramente suas dificuldades de compreensão e, depois, acelerando o aprendizado.</p>
+            </div>
+        </div>
+        <div class="img">
+            <div class="a"><img class="i" src="img/empower_teachers_icon.png" alt="">
+                <h4>Feedback instantâneo</h4>
+                <p>Os alunos recebem automaticamente a correção dos exercícios, descobrindo os seus erros e acertos.</p>
+            </div>
+        </div>
 
     </section>
     <script src="js/index.js"></script>
@@ -66,4 +72,5 @@
         ©2024 todos os direitos reservados!
     </footer>
 </body>
+
 </html>

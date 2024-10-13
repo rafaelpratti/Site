@@ -1,16 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
     <link rel="stylesheet" href="css/cadastrar-login.css">
 </head>
+
 <body>
     <header>
         <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
-        <nav>       
+        <nav>
             <ul class="menu">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastrar.php">Cadastrar</a></li>
@@ -46,7 +47,7 @@
             <form id="formcadastro">
                 <fieldset>
                     <label for="nome">Nome Completo: </label>
-                    <input type="text" id="nome" class="text"name="fname"><br>
+                    <input type="text" id="nome" class="text" name="fname"><br>
                     <label for="usuario">Usuário: </label>
                     <input type="text" id="usuario" class="text" name="user"><br>
                     <label for="email">Email: </label>
@@ -67,4 +68,5 @@
         ©2024 todos os direitos reservados!
     </footer>
 </body>
+
 </html>

@@ -1,15 +1,16 @@
 /*Css usado para as páginas de login e cadastro simultaneamente*/
 /* Reset CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /* ------------------------------------------------ */
 
 /* CSS do menu superior */
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,29 +19,31 @@ header{
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255)
 }
 
-.menu{
+.menu {
     display: flex;
 }
 
-.menu li a{
+.menu li a {
     padding: 0.4em;
     text-decoration: none;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
     font-size: 1.2rem;
 }
 
-.logo{
+.logo {
     padding-top: 10px;
     max-height: 4em;
 }
+
 /*----------------------------------------------*/
 
 /* CSS do rodapé */
@@ -56,6 +59,7 @@ footer {
     padding: 0.2em;
     position: fixed;
 }
+
 /* --------------------------------------------- */
 
 /* CSS do conteúdo em texto */
@@ -67,32 +71,33 @@ footer {
     margin-bottom: 10.5vh;
 }
 
-.sec1 > div{
+.sec1>div {
     display: flex;
     flex-direction: column;
 }
 
-.sec1 > img {
+.sec1>img {
     height: 100px;
     margin-bottom: 5vh;
 }
+
 /*---------------------------------------------*/
 
 /*CSS do formulário*/
-fieldset{
+fieldset {
     margin-top: 3vh;
     border: none;
     display: flex;
     flex-direction: column;
 }
 
-input{
+input {
     border-radius: 8px;
     box-shadow: 1px;
     height: 2.5em;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     background-color: #246219;
     color: white;
     border-radius: 8px;
@@ -100,12 +105,13 @@ button[type="submit"]{
     height: 2.5em;
 }
 
-div > img{
+div>img {
     height: 100px;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 5vh;
 }
+
 /*---------------------------------------------*/
 
 /* Barra de Acessibilidade */
@@ -190,6 +196,7 @@ body.contrast-black {
         margin: 20px 0;
         width: 100%;
     }
+
     .accessibility-box {
         border-radius: 0;
     }

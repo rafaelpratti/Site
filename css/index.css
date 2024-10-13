@@ -1,14 +1,15 @@
 /* Reset CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /* ------------------------------------------------ */
 
 /* CSS do menu superior */
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,29 +18,31 @@ header{
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255)
 }
 
-.menu{
+.menu {
     display: flex;
 }
 
-.menu li a{
+.menu li a {
     padding: 0.4em;
     text-decoration: none;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
     font-size: 1.2rem;
 }
 
-.logo{
+.logo {
     padding-top: 10px;
     max-height: 4em;
 }
+
 /*----------------------------------------------*/
 
 /* CSS do rodapé */
@@ -53,71 +56,73 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 0.2em;
-    position: fixed; 
- }
+    position: fixed;
+}
+
 /*----------------------------------------------*/
 
 /* CSS do body */
-body{
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 /*----------------------------------------------*/
 
 /* CSS do conteúdo */
-.sec1{
+.sec1 {
     padding-top: 0vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-span{
+span {
     background-color: #246219;
     color: white;
     border-radius: 0.6em;
     padding: 0.5em;
 }
 
-p{
+p {
     text-align: center;
     padding-bottom: 1vh;
 }
 
-.sec2{
+.sec2 {
     padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sec3{
+.sec3 {
     display: flex;
     justify-content: center;
 }
 
-.img{
-    padding:0.4em 7.5em;
+.img {
+    padding: 0.4em 7.5em;
 }
 
 
-.sec1 > img{
+.sec1>img {
     height: 200px;
 }
 
-h4{
+h4 {
     text-align: center;
 }
 
-.a{
+.a {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 500px;
 }
 
-.i{
+.i {
     width: 100px;
     height: auto;
 }
@@ -211,6 +216,7 @@ body.contrast-black {
         margin: 20px 0;
         width: 100%;
     }
+
     .accessibility-box {
         border-radius: 0;
     }

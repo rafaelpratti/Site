@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /*----------------------------------------------*/
 
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,29 +18,31 @@ header{
 }
 
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255)
 }
 
-.menu{
+.menu {
     display: flex;
 }
 
-.menu li a{
+.menu li a {
     padding: 0.4em;
     text-decoration: none;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
     font-size: 1.2rem;
 }
 
-.logo{
+.logo {
     padding-top: 10px;
     max-height: 4em;
 }
+
 /*----------------------------------------------*/
 
 footer {
@@ -54,6 +57,7 @@ footer {
     padding: 0.2em;
     position: fixed;
 }
+
 /*----------------------------------------------*/
 
 /*Organização das sections*/
@@ -65,42 +69,43 @@ footer {
     margin-bottom: 17vh;
 }
 
-.sec1 > div{
+.sec1>div {
     display: flex;
     flex-direction: column;
 }
 
-.sec1 > img {
+.sec1>img {
     height: 100px;
     margin-bottom: 5vh;
 }
+
 /*----------------------------------------------*/
 
 /*Css do formulário*/
-fieldset{
+fieldset {
     margin-top: 3vh;
     border: none;
     display: flex;
     flex-direction: column;
 }
 
-input{
+input {
     border-radius: 8px;
     box-shadow: 1px;
     height: 2.5em;
     margin-bottom: 1.5em;
 }
 
-input[type="text"]{
+input[type="text"] {
     height: 2.5em;
 }
 
-input[type="button"]{
+input[type="button"] {
     background-color: #246219;
     color: white;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     background-color: #246219;
     color: white;
     border-radius: 8px;
@@ -108,4 +113,5 @@ button[type="submit"]{
     height: 2.5em;
     margin-top: 1.5em;
 }
+
 /* --------------------------------------------- */

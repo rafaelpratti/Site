@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escolha de Cursos</title>
     <link rel="stylesheet" href="css/cursos.css">
 </head>
+
 <body>
 
     <header>
         <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
-        <nav>       
+        <nav>
             <ul class="menu">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastrar.php">Cadastrar</a></li>
@@ -38,11 +40,12 @@
             </ul>
         </div>
     </div>
-    
+
 
     <script src="js/cursos.js"></script>
     <footer class="footer">
         ©2024 todos os direitos reservados!
     </footer>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
     <header>
 
         <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
-        <nav>       
+        <nav>
             <ul class="menu">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastrar.php">Cadastrar</a></li>
@@ -41,29 +42,30 @@
         </div>
     </aside>
 
-        <section class="sec1">
-            <div>
-                <img class="img" src="img/login_img.png">
-                <h1>Faça seu Login:</h1>    
-            
-                <form id="formlogin">
-                    <fieldset>
-                        <label for="email">Email/Usuário: </label>
-                        <input type="email" id="email" class="text" name="email"><br>
+    <section class="sec1">
+        <div>
+            <img class="img" src="img/login_img.png">
+            <h1>Faça seu Login:</h1>
 
-                        <label for="senha">Senha: </label>
-                        <input type="password" id="senha" class="password" name="senha"><br><br>
+            <form id="formlogin">
+                <fieldset>
+                    <label for="email">Email/Usuário: </label>
+                    <input type="email" id="email" class="text" name="email"><br>
 
-                        <button type="submit" id="bot_entrar" class="login">Entrar</button>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" class="password" name="senha"><br><br>
+
+                    <button type="submit" id="bot_entrar" class="login">Entrar</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
 
     <script src="js/login.js"></script>
-    
+
     <footer class="footer">
         ©2024 todos os direitos reservados!
     </footer>
 </body>
+
 </html>

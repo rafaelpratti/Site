@@ -1,14 +1,15 @@
 /* Reset CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /* ------------------------------------------------ */
 
 /* CSS do menu superior */
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,29 +18,31 @@ header{
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255)
 }
 
-.menu{
+.menu {
     display: flex;
 }
 
-.menu li a{
+.menu li a {
     padding: 0.4em;
     text-decoration: none;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
     font-size: 1.2rem;
 }
 
-.logo{
+.logo {
     padding-top: 10px;
     max-height: 4em;
 }
+
 /*----------------------------------------------*/
 
 /* CSS do rodapé */
@@ -54,37 +57,39 @@ footer {
     width: 100%;
     padding: 0.2em;
     position: fixed;
- }
+}
+
 /* --------------------------------------------- */
 
 /* CSS do Body */
-body{
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 /*--------------------------*/
 
 /* CSS do conteúdo em texto */
-.sec1{
+.sec1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.sec1 > div{
+.sec1>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5vh;
-    
+
 }
 
-h4{
+h4 {
     margin: 1em;
 }
 
-.sec2{
+.sec2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -92,27 +97,28 @@ h4{
     margin-right: 50px;
 }
 
-.sec2 > div{
+.sec2>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1em;
 }
 
-.sec2 > div > p{
+.sec2>div>p {
     text-align: center;
 }
+
 /*---------------------------------------------*/
 
 
 /* CSS das fotos */
-.sec3{
+.sec3 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.equipe{
+.equipe {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,15 +127,16 @@ h4{
     padding: 20px;
 }
 
-.equipe > div{
+.equipe>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
 }
 
-.equipe > div > img{
+.equipe>div>img {
     height: 40vh;
     border-radius: 8px;
 }
+
 /* -------------------------------------------------- */

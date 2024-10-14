@@ -76,6 +76,8 @@
 
     </section>
 
+    <script src="js/sobre.js"></script>
+
     <footer class="footer">
         ©2024 todos os direitos reservados!
     </footer>

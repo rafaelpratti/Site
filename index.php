@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quest</title>
     <link rel="stylesheet" href="css/index.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); </style>
 </head>
 
 <body>
     <header>
-
-        <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a></li>
+        
+            </ul>
+        </nav>
 
         <nav>
             <ul class="menu">
@@ -29,7 +34,6 @@
             <h2>Acessibilidade</h2>
             <div class="font-size-control">
                 <button id="decrease-font" class="square-button">A-</button>
-                <button id="default-font" class="square-button" disabled>A</button>
                 <button id="increase-font" class="square-button">A+</button>
             </div>
             <div class="contrast-control">
@@ -49,7 +53,7 @@
     </section>
 
     <section class="sec2">
-        <p>Como o TRILINGO funciona?</p>
+        <p>Como o <strong>Code Quest</strong> funciona?</p>
     </section>
 
     <section class="sec3">

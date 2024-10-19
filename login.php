@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quest</title>
     <link rel="stylesheet" href="css/cadastrar-login.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); </style>
 </head>
 
 <body>
 
     <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a></li>
+        
+            </ul>
+        </nav>
 
-        <a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a>
         <nav>
             <ul class="menu">
                 <li><a href="login.php">Login</a></li>

@@ -39,10 +39,7 @@ ul, li {
     font-size: 1.2rem;
 }
 
-.logo {
-    padding-top: 10px;
-    max-height: 4em;
-}
+
 
 .logo > img{
     max-height: 50px;

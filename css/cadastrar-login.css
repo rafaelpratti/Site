@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Days One", sans-serif
 }
 
 /* ------------------------------------------------ */
@@ -39,9 +39,9 @@ li {
     font-size: 1.2rem;
 }
 
-.logo {
-    padding-top: 10px;
-    max-height: 4em;
+.logo > img{
+    max-height: 50px;
+    margin-left: 1em;
 }
 
 /*----------------------------------------------*/

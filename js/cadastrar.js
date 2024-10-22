@@ -46,8 +46,8 @@ function decreaseFont() {
 }
 
 function resetFontAndContrast() {
-    fontSize = 12;
-    body.style.fontSize = '16px';
+    fontSize = 22;
+    body.style.fontSize = '22px';
     body.className = ''; // Remove todas as classes de contraste
     saveSettings(); // Salva o estado padrão no localStorage
 }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Cursos - Code Quest</title>
     <link rel="stylesheet" href="css/ger_cursos.css">
+    <link rel="stylesheet" href="css/comum.css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); </style>
 </head>
 

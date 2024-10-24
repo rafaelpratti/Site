@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quest</title>
     <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/comum.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); </style>
 </head>
 

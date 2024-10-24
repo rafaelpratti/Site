@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quest</title>
     <link rel="stylesheet" href="css/cadastrar-login.css">
+    <link rel="stylesheet" href="css/comum.css">
+    <link rel="stylesheet" href="css/painel_acessibilidade.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); </style>
 </head>
 
@@ -35,7 +37,6 @@
             <h2>Acessibilidade</h2>
             <div class="font-size-control">
                 <button id="decrease-font" class="square-button">A-</button>
-                <button id="default-font" class="square-button" disabled>A</button>
                 <button id="increase-font" class="square-button">A+</button>
             </div>
             <div class="contrast-control">

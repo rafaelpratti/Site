@@ -1,0 +1,45 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.accessibility-box{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.font-size-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.contrast-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px
+}
+
+.square-button{
+    margin: 5px;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }

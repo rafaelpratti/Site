@@ -75,26 +75,5 @@ body.contrast-black {
     color: yellow;
 }
 
-/* Responsividade */
-@media screen and (max-width: 1000px) {
-    #accessibility-bar {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin: 20px 0;
-        width: 100%;
-    }
-
-    .accessibility-box {
-        border-radius: 0;
-    }
-
-    .square-button {
-        width: 45px;
-        height: 45px;
-        font-size: 1rem;
-        line-height: 45px;
-    }
-}
 
 /*----------------------------------------------*/

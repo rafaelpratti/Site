@@ -24,7 +24,7 @@
 
             <form id="formlogin">
                 <fieldset>
-                    <label for="email">Email/Usuário: </label>
+                    <label for="email">Email: </label>
                     <input type="email" id="email" class="text" name="email"><br>
 
                     <label for="senha">Senha: </label>

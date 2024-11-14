@@ -25,8 +25,6 @@
                 <fieldset>
                     <label for="nome">Nome Completo: </label>
                     <input type="text" id="nome" class="text" name="fname"><br>
-                    <label for="usuario">Usuário: </label>
-                    <input type="text" id="usuario" class="text" name="user"><br>
                     <label for="email">Email: </label>
                     <input type="email" id="email" class="text" name="email"><br>
                     <label for="senha">Senha: </label>

@@ -58,3 +58,16 @@ document.getElementById('contrast-black').addEventListener('click', () => setCon
 
 // Carregar configurações ao iniciar
 window.onload = loadSettings;
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+var coll = document.getElementById('collapsible');
+var accessibilitybox = document.getElementById('acbox');
+coll.addEventListener("click", function(){
+    console.log("a")
+    if (accessibilitybox.style.display === "flex") {
+        accessibilitybox.style.display = "none";
+      } else {
+        accessibilitybox.style.display = "flex";
+      }
+    })

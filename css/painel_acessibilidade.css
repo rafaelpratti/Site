@@ -1,79 +1,94 @@
-/* Barra de Acessibilidade */
-#accessibility-bar {
-    position: fixed;
-    top: 120px;
-    right: 20px;
-    width: 200px;
-}
-
+/* Painel de acessibilidade */
 .accessibility-box {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9; /* Cinza claro */
+    border: 2px solid #ddd;
     border-radius: 10px;
-    text-align: center;
-    position: relative;
-    top: 300px;
-    left: 10px;
-
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixar na tela */
+    bottom: 90px; /* Distância da parte inferior */
+    right: 20px; /* Distância da parte direita */
+    z-index: 1000; /* Garantir que o painel fique acima de outros elementos */
+    align-items: center;
 }
 
-.accessibility-box h2 {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-/* Botões quadrados */
-.square-button {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 50px;
-    border: 1px solid #ccc;
-    background-color: white;
-    cursor: pointer;
-}
-
-.square-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-/* Botão Redefinir */
-.reset-button {
-    margin-top: 10px;
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #333;
+/* Estilo para o botão collapsible */
+#collapsible {
+    background-color: #246219; /* Azul suave */
     color: white;
+    font-size: 16px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: fixed; /* Fixar na tela */
+    bottom: 40px; /* Distância da parte inferior */
+    right: 20px; /* Distância da parte direita */
+    z-index: 1001; /* Ficar acima do painel */
+}
+
+#collapsible:hover {
+    background-color: #b5babe; /* Azul mais escuro */
+}
+
+/* Botões do painel */
+.square-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Botões de controle de tamanho */
+#decrease-font, #increase-font {
+    background-color: #246219; /* Azul */
+    color: white;
+}
+
+#decrease-font:hover, #increase-font:hover {
+    background-color: #246219; /* Azul mais escuro */
+}
+
+/* Botões de contraste */
+#contrast-normal {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+#contrast-yellow {
+    color: black;
+    border: 1px solid #000;
+}
+
+#contrast-blue {
+    border: 1px solid #0056b3;
+}
+
+#contrast-black {
+    border: 1px solid #333;
+}
+
+/* Botão de redefinição */
+.reset-button {
+    background-color: #246219; /* Laranja */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .reset-button:hover {
-    background-color: #555;
+    background-color: #b5babe; /* Laranja mais escuro */
 }
-
-/* Ajuste de Contraste */
-body.contrast-yellow {
-    background-color: yellow;
-    color: black;
-}
-
-body.contrast-blue {
-    background-color: blue;
-    color: white;
-}
-
-body.contrast-black {
-    background-color: black;
-    color: yellow;
-}
-
-
-/*----------------------------------------------*/

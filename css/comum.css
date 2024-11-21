@@ -64,3 +64,18 @@ body {
     flex-direction: column;
     margin-bottom: 40vh;
 }
+
+body.contrast-yellow {
+    background-color: yellow;
+    color: black;
+}
+
+body.contrast-blue {
+    background-color: blue;
+    color: white;
+}
+
+body.contrast-black {
+    background-color: black;
+    color: yellow;
+}

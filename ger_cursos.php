@@ -40,7 +40,8 @@
     </section>
 
     <script src="js/cadcursos.js"></script>
-    <script src="js/collapsible.js"></script>
+    <script src="js/ger_cursos.js"></script>
+
 
 </body>
 

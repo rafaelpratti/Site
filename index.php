@@ -45,7 +45,6 @@
     </section>
 
     <script src="js/index.js"></script>
-    <script src="js/collapsible.js"></script>
 
 </body>
 

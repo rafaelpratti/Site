@@ -40,7 +40,6 @@
     </section>
 
     <script src="js/contato.js"></script>
-    <script src="js/collapsible.js"></script>
     
 </body>
 

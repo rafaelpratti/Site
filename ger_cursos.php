@@ -1,4 +1,4 @@
-<?php include 'cabecalho.php'; ?>
+<?php include 'cabecalho_footer.php'; ?>
 
     <div class="container">
         <h1>Gerenciamento de Cursos - Trilingo</h1>
@@ -41,9 +41,7 @@
 
     <script src="js/cadcursos.js"></script>
     <script src="js/collapsible.js"></script>
-    <footer class="footer">
-        ©2024 todos os direitos reservados!
-    </footer>
+
 </body>
 
 </html>

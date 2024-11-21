@@ -1,4 +1,4 @@
-<?php include 'cabecalho.php';?>
+<?php include 'cabecalho_footer.php';?>
 
     <section class="sec1">
         <img src="img/what’s-the-best-programming-language-to-learn-first.png" alt="">
@@ -46,9 +46,7 @@
 
     <script src="js/index.js"></script>
     <script src="js/collapsible.js"></script>
-    <footer class="footer">
-        ©2024 todos os direitos reservados!
-    </footer>
+
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<?php include 'cabecalho.php'; ?>
+<?php include 'cabecalho_footer.php'; ?>
 
     <section class="sec1">
         <div>
@@ -39,10 +39,7 @@
 
     <script src="js/login.js"></script>
     <script src="js/collapsible.js"></script>
-
-    <footer class="footer">
-        ©2024 todos os direitos reservados!
-    </footer>
+    
 </body>
 
 </html>

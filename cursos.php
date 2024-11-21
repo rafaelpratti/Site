@@ -1,4 +1,4 @@
-<?php include 'cabecalho.php'; ?>
+<?php include 'cabecalho_footer.php'; ?>
 
     <div class="container">
         <h1>Escolha de Cursos</h1>
@@ -38,9 +38,7 @@
 
     <script src="js/collapsible.js"></script>
     <script src="js/cursos.js"></script>
-    <footer class="footer">
-        ©2024 todos os direitos reservados!
-    </footer>
+    
 </body>
 
 </html>

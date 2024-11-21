@@ -1,5 +1,3 @@
-/*Css usado para as páginas de login e cadastro simultaneamente*/
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +5,6 @@
     font-family: "Days One", sans-serif;
 }
 
-/* ------------------------------------------------ */
-
-/* CSS do menu superior */
 header {
     display: flex;
     justify-content: space-between;
@@ -48,9 +43,6 @@ ul, li {
     
 }
 
-/*----------------------------------------------*/
-
-/* CSS do rodapé */
 footer {
     display: flex;
     flex-direction: column;
@@ -64,7 +56,6 @@ footer {
     position: fixed;
 }
 
-/* CSS do conteúdo em texto */
 .sec1 {
     display: flex;
     flex-direction: column;
@@ -85,9 +76,6 @@ footer {
     padding-right: 100px;
 }
 
-/*---------------------------------------------*/
-
-/*CSS do formulário*/
 fieldset {
     margin-top: 3vh;
     border: none;

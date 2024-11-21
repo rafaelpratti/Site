@@ -1,4 +1,3 @@
-/* CSS do conteúdo em texto */
 .sec1 {
     padding-top: 5vh;
     display: flex;
@@ -17,5 +16,3 @@ div>img {
     margin-bottom: 1.5em;
     margin-top: 1.5em;
 }
-
-/*----------------------------------------------*/

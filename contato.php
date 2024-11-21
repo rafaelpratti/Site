@@ -1,4 +1,4 @@
-<?php include 'cabecalho.php'; ?>
+<?php include 'cabecalho_footer.php'; ?>
 
     <!--CONTEUDO PRINCIPAL-->
     <section class="sec1">
@@ -38,11 +38,6 @@
             </div>
         <button type="button" class="collapsible" id="collapsible">Acessibilidade</button>
     </section>
-
-    <!--RODAPE-->
-    <footer class="footer">
-        ©2024 todos os direitos reservados!
-    </footer>
 
     <script src="js/contato.js"></script>
     <script src="js/collapsible.js"></script>

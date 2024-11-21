@@ -39,7 +39,6 @@
     </section>
 
     <script src="js/cadastrar.js"></script>
-    <script src="js/collapsible.js"></script>
 
 </body>
 

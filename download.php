@@ -34,7 +34,7 @@
         <button type="button" class="collapsible" id="collapsible">Acessibilidade</button>
     </section>
 
-    <script src="js/collapsible.js"></script>
+    <script src="js/download.js"></script>
     
 </body>
 

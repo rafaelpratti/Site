@@ -55,7 +55,6 @@
     </section>
 
     <script src="js/sobre.js"></script>
-    <script src="js/collapsible.js"></script>
 
 </body>
 

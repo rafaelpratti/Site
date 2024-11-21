@@ -38,7 +38,6 @@
     </section>
 
     <script src="js/login.js"></script>
-    <script src="js/collapsible.js"></script>
     
 </body>
 

@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO usuarios (nome, email, senha, role) VALUES ('$nome', '$email', '$senhaHash', 'aluno')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: cadastro.php");
+        header("Location: cadastrado.php");
     } else {
         echo "Erro: " . $conn->error;
     }
@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 
-?>
+
 
     <section class="sec1">
         <img src="img/cadastro_img.png">

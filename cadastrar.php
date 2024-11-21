@@ -1,4 +1,28 @@
 <?php include 'cabecalho_footer.php'; ?>
+<?php 
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    require_once 'db.php';
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    
+    // Criptografa a senha
+    $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+
+    $sql = "INSERT INTO usuarios (nome, email, senha, role) VALUES ('$nome', '$email', '$senhaHash', 'aluno')";
+
+    if ($conn->query($sql) === TRUE) {
+        header("Location: cadastro.php");
+    } else {
+        echo "Erro: " . $conn->error;
+    }
+}
+?>
+
+
+?>
 
     <section class="sec1">
         <img src="img/cadastro_img.png">

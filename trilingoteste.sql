@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 22-Nov-2024 às 11:25
+-- Tempo de geração: 22-Nov-2024 às 12:00
 -- Versão do servidor: 8.3.0
 -- versão do PHP: 8.1.3
 
@@ -24,6 +24,74 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `curso`
+--
+
+CREATE TABLE `curso` (
+  `descricao` varchar(300) NOT NULL,
+  `tempo_conclusao` int NOT NULL,
+  `titulo` varchar(30) NOT NULL,
+  `dificuldade` varchar(10) NOT NULL,
+  `id` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `exercicio`
+--
+
+CREATE TABLE `exercicio` (
+  `enunciado` varchar(300) NOT NULL,
+  `resposta_feedback` varchar(300) NOT NULL,
+  `id` int NOT NULL,
+  `fk_unidade_id` int NOT NULL,
+  `ordem` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `realizacao_do_curso`
+--
+
+CREATE TABLE `realizacao_do_curso` (
+  `fk_curso_id` int NOT NULL,
+  `fk_aluno_id` int NOT NULL,
+  `progresso` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `realizacao_do_exercicio`
+--
+
+CREATE TABLE `realizacao_do_exercicio` (
+  `fk_aluno_id` int NOT NULL,
+  `fk_exercicio_id` int NOT NULL,
+  `resposta_enviada` varchar(300) NOT NULL,
+  `data` date NOT NULL,
+  `tempo_gasto` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `unidade`
+--
+
+CREATE TABLE `unidade` (
+  `descricao` varchar(300) NOT NULL,
+  `id` int NOT NULL,
+  `titulo` varchar(30) NOT NULL,
+  `fk_curso_id` int NOT NULL,
+  `ordem` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuario`
 --
 
@@ -38,6 +106,24 @@ CREATE TABLE `usuario` (
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `curso`
+--
+ALTER TABLE `curso`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `exercicio`
+--
+ALTER TABLE `exercicio`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `unidade`
+--
+ALTER TABLE `unidade`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices para tabela `usuario`

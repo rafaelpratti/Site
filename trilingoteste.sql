@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 22-Nov-2024 às 12:00
+-- Tempo de geração: 22-Nov-2024 às 12:14
 -- Versão do servidor: 8.3.0
 -- versão do PHP: 8.1.3
 
@@ -35,6 +35,13 @@ CREATE TABLE `curso` (
   `id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Extraindo dados da tabela `curso`
+--
+
+INSERT INTO `curso` (`descricao`, `tempo_conclusao`, `titulo`, `dificuldade`, `id`) VALUES
+('Descrição do Curso', 1200, 'O titulo do curso escolhido', 'dificil', 47);
+
 -- --------------------------------------------------------
 
 --
@@ -49,6 +56,13 @@ CREATE TABLE `exercicio` (
   `ordem` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Extraindo dados da tabela `exercicio`
+--
+
+INSERT INTO `exercicio` (`enunciado`, `resposta_feedback`, `id`, `fk_unidade_id`, `ordem`) VALUES
+('O Enunciado do Exercicio', 'O Feedback da Resposta do Exercicio', 56, 32, 69);
+
 -- --------------------------------------------------------
 
 --
@@ -60,6 +74,13 @@ CREATE TABLE `realizacao_do_curso` (
   `fk_aluno_id` int NOT NULL,
   `progresso` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `realizacao_do_curso`
+--
+
+INSERT INTO `realizacao_do_curso` (`fk_curso_id`, `fk_aluno_id`, `progresso`) VALUES
+(34, 15, 50);
 
 -- --------------------------------------------------------
 
@@ -75,6 +96,13 @@ CREATE TABLE `realizacao_do_exercicio` (
   `tempo_gasto` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Extraindo dados da tabela `realizacao_do_exercicio`
+--
+
+INSERT INTO `realizacao_do_exercicio` (`fk_aluno_id`, `fk_exercicio_id`, `resposta_enviada`, `data`, `tempo_gasto`) VALUES
+(68, 12, 'A resposta enviada do Exercicio', '2024-04-22', 60);
+
 -- --------------------------------------------------------
 
 --
@@ -89,6 +117,13 @@ CREATE TABLE `unidade` (
   `ordem` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Extraindo dados da tabela `unidade`
+--
+
+INSERT INTO `unidade` (`descricao`, `id`, `titulo`, `fk_curso_id`, `ordem`) VALUES
+('A descricao do conteudo do curso', 23, 'O titulo do conteudo escolhido', 13, 22);
+
 -- --------------------------------------------------------
 
 --
@@ -102,6 +137,13 @@ CREATE TABLE `usuario` (
   `senha` varchar(255) NOT NULL,
   `role` enum('admin','aluno') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `nome`, `email`, `senha`, `role`) VALUES
+(87, 'O nome do usuario', 'O email do usuario', 'A senha do usuario', 'aluno');
 
 --
 -- Índices para tabelas despejadas
@@ -140,7 +182,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

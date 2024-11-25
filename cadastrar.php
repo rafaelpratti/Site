@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include 'cabecalho_footer.php'; ?>
 
 <?php
@@ -25,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     // Verifica se o email já existe no banco
-    $emailCheckSql = "SELECT id FROM usuario WHERE email = ?";
+    $emailCheckSql = "SELECT id FROM usuarios WHERE email = ?";
     $stmt = $conn->prepare($emailCheckSql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -36,13 +37,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Erro: O email já está em uso. Por favor, utilize outro.";
     } else {
         // Insere o usuário no banco de dados
-        $insertSql = "INSERT INTO usuario (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
+        $insertSql = "INSERT INTO usuarios (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
         $stmtInsert = $conn->prepare($insertSql);
         $stmtInsert->bind_param("sss", $nome, $email, $senhaHash);
 
         if ($stmtInsert->execute()) {
-            // Cadastro bem-sucedido, redireciona para a página "cadastrado.php"
-            header("Location: cadastrado.php");
+            // Cadastro bem-sucedido, redireciona para a página "login.php"
+            $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso!";
+            header("Location: login.php");
             exit;
         } else {
             echo "Erro ao cadastrar: " . $conn->error;

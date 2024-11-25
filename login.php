@@ -1,4 +1,46 @@
 <?php include 'cabecalho_footer.php'; ?>
+<?php
+session_start(); // Inicia a sessão
+
+// Verifica se existe uma mensagem de sucesso na sessão
+if (isset($_SESSION['mensagem_sucesso'])) {
+    // Armazena a mensagem na variável JavaScript
+    $mensagem_sucesso = $_SESSION['mensagem_sucesso'];
+    // Remove a mensagem de sucesso após exibi-la
+    unset($_SESSION['mensagem_sucesso']);
+} else {
+    $mensagem_sucesso = "";
+}
+?>
+
+<!-- Toast Message (não visível por padrão) -->
+<div id="toast" class="toast"><?= $mensagem_sucesso ?></div>
+
+<!-- Adicionando JavaScript para mostrar a mensagem -->
+<script>
+    <?php if (!empty($mensagem_sucesso)) { ?>
+        // Exibe a mensagem toast
+        var toast = document.getElementById('toast');
+        toast.style.visibility = 'visible';  // Torna a mensagem visível
+
+        // Faz a mensagem desaparecer após 5 segundos (com efeito de fade-out)
+        setTimeout(function() {
+            toast.style.opacity = '0'; // Começa o fade-out
+        }, 5000); // 5000 milissegundos = 5 segundos para o fade-out
+
+        // Após o fade-out terminar, esconde o elemento completamente
+        setTimeout(function() {
+            toast.style.visibility = 'hidden'; // Torna invisível após a animação
+        }, 5500); // Isso ocorre depois de 5.5 segundos, para completar a animação de fade-out
+    <?php } ?>
+</script>
+
+<!-- Adicionando JavaScript para mostrar a mensagem no console -->
+<script>
+    <?php if (!empty($mensagem_sucesso)) { ?>
+        console.log("<?= $mensagem_sucesso ?>"); // Exibe a mensagem no console
+    <?php } ?>
+</script>
 
     <section class="sec1">
         <div>

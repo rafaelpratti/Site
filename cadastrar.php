@@ -1,7 +1,6 @@
-<?php session_start(); ?>
-<?php include 'cabecalho_footer.php'; ?>
-
 <?php
+session_start();
+include 'cabecalho_footer.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -42,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmtInsert->bind_param("sss", $nome, $email, $senhaHash);
 
         if ($stmtInsert->execute()) {
-            // Cadastro bem-sucedido, redireciona para a página "login.php"
+            // Cadastro bem-sucedido, armazena a mensagem de sucesso e redireciona para a página de login
             $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso!";
             header("Location: login.php");
             exit;

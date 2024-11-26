@@ -7,61 +7,77 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$erros = []; // Array para armazenar mensagens de erro
+$nome = $email = $senha = $confirmasenha = ""; // Inicializa variáveis para manter os valores preenchidos
+
 if (isset($_SESSION['usuario_id'])) {
     header("Location: dashboard.php"); // Redireciona para o dashboard
-    exit; // Garantir que o código abaixo não será executado
+    exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require_once 'db.php';
 
-    // Recebe os dados do formulário
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    $confirmasenha = $_POST['confirmar'];
+    // Recebe os dados do formulário e remove espaços extras
+    $nome = htmlspecialchars(trim($_POST['nome']), ENT_QUOTES, 'UTF-8'); // Sanitiza o nome
+    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL); // Sanitiza o e-mail
+    $senha = trim($_POST['senha']);
+    $confirmasenha = trim($_POST['confirmar']);
 
-    // Verifica se as senhas coincidem
-    if ($senha !== $confirmasenha) {
-        echo "As senhas não coincidem!";
-        exit;
+    // Validações
+    if (!$nome || strlen($nome) < 3) {
+        $erros[] = "O nome deve ter pelo menos 3 caracteres.";
     }
 
-    // Criptografa a senha
-    $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $erros[] = "Insira um email válido.";
+    }
 
-    // Verifica se o email já existe no banco
-    $emailCheckSql = "SELECT id FROM usuarios WHERE email = ?";
-    $stmt = $conn->prepare($emailCheckSql);
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $stmt->store_result();
+    if ($senha !== $confirmasenha) {
+        $erros[] = "As senhas não coincidem!";
+    }
 
-    if ($stmt->num_rows > 0) {
-        // Email já cadastrado
-        echo "Erro: O email já está em uso. Por favor, utilize outro.";
-    } else {
-        // Insere o usuário no banco de dados
-        $insertSql = "INSERT INTO usuarios (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
-        $stmtInsert = $conn->prepare($insertSql);
-        $stmtInsert->bind_param("sss", $nome, $email, $senhaHash);
+    if (strlen($senha) < 6) {
+        $erros[] = "A senha deve ter pelo menos 6 caracteres.";
+    }
 
-        if ($stmtInsert->execute()) {
-            // Cadastro bem-sucedido, armazena a mensagem de sucesso e redireciona para a página de login
-            $_SESSION['usuario_id'] = $conn->insert_id; // Captura o ID do último registro inserido
-            $_SESSION['usuario_nome'] = $nome;
-            $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso!";
-            header("Location: dashboard.php");
-            exit;
+    // Se não houver erros, processa o cadastro
+    if (empty($erros)) {
+        // Criptografa a senha
+        $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+
+        // Verifica se o email já existe no banco
+        $emailCheckSql = "SELECT id FROM usuarios WHERE email = ?";
+        $stmt = $conn->prepare($emailCheckSql);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->store_result();
+
+        if ($stmt->num_rows > 0) {
+            $erros[] = "O email já está em uso. Por favor, utilize outro.";
         } else {
-            echo "Erro ao cadastrar: " . $conn->error;
+            // Insere o usuário no banco de dados
+            $insertSql = "INSERT INTO usuarios (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
+            $stmtInsert = $conn->prepare($insertSql);
+            $stmtInsert->bind_param("sss", $nome, $email, $senhaHash);
+
+            if ($stmtInsert->execute()) {
+                // Cadastro bem-sucedido
+                $_SESSION['usuario_id'] = $conn->insert_id;
+                $_SESSION['usuario_nome'] = $nome;
+                $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso!";
+                header("Location: dashboard.php");
+                exit;
+            } else {
+                $erros[] = "Erro ao cadastrar: " . $conn->error;
+            }
+
+            $stmtInsert->close();
         }
 
-        $stmtInsert->close();
+        $stmt->close();
+        $conn->close();
     }
-
-    $stmt->close();
-    $conn->close();
 }
 ?>
 
@@ -69,12 +85,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <img src="img/cadastro_img.png">
     <div>
         <h1>Faça seu Cadastro:</h1>
+        <!-- Exibe erros, se houver -->
+        <?php if (!empty($erros)): ?>
+            <div id="erro" style="color: red; font-weight: bold;">
+                <?php foreach ($erros as $erro): ?>
+                    <p><?= $erro ?></p>
+                <?php endforeach; ?>
+            </div>
+            <script>
+                alert("Existem erros no formulário! Verifique os campos destacados.");
+            </script>
+        <?php endif; ?>
+
         <form id="formcadastro" method="POST" action="">
             <fieldset>
                 <label for="nome">Nome Completo: </label>
-                <input type="text" id="nome" class="text" name="nome" required><br>
+                <input type="text" id="nome" class="text" name="nome" value="<?= htmlspecialchars($nome) ?>" required><br>
                 <label for="email">Email: </label>
-                <input type="email" id="email" class="text" name="email" required><br>
+                <input type="email" id="email" class="text" name="email" value="<?= htmlspecialchars($email) ?>" required><br>
                 <label for="senha">Senha: </label>
                 <input type="password" id="senha" class="text" name="senha" required><br>
                 <label for="confirmasenha">Confirmar Senha: </label>

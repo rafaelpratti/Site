@@ -1,0 +1,19 @@
+.sec1 {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sec1 h1 {
+    color: #2e7d32;
+    font-size: 2rem;
+}
+
+.sec1 p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}

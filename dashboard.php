@@ -2,6 +2,10 @@
 session_start();
 include 'cabecalho_footer.php'; 
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Verifica se o usuário está logado
 if (!isset($_SESSION['usuario_id'])) {
     // Caso não esteja logado, redireciona para a página de login
@@ -53,6 +57,25 @@ if (isset($_SESSION['mensagem_sucesso'])) {
     </div>
 </section>
 
+<!-- Botões de navegação -->
+<section>
+    <div class="dashboard-buttons-container">
+        <form action="meus_cursos.php" method="get">
+            <button type="submit" class="dashboard-button">Meus Cursos</button>
+        </form>
+        
+        <form action="editar_perfil.php" method="get">
+            <button type="submit" class="dashboard-button">Editar Perfil</button>
+        </form>
+        
+        <form action="logout.php" method="post">
+            <button type="submit" class="dashboard-button">Encerrar Sessão</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- Configurações de Acessibilidade -->
 <section>
     <div id="acbox" class="accessibility-box">
         <div class="font-size-control">
@@ -70,7 +93,6 @@ if (isset($_SESSION['mensagem_sucesso'])) {
     <button type="button" class="collapsible" id="collapsible">Acessibilidade</button>
 </section>
 
-<script src="js/dashboard.js"></script>
 
 </body>
 </html>

@@ -1,43 +1,31 @@
 <?php include 'cabecalho_footer.php'; ?>
 
-    <div class="container">
-        <h1>Escolha de Cursos</h1>
-        <div class="course-list">
-            <h2>Lista de Cursos</h2>
-            <ul id="available-courses">
-                <li>Curso de Lógica <button class="add-course" onclick="addCourse('Curso de Lógica')">➔</button></li>
-                <li>Curso de Python <button class="add-course" onclick="addCourse('Curso de Python')">➔</button></li>
-            </ul>
-        </div>
-
-        <div class="my-courses">
-            <h2>Meus Cursos</h2>
-            <ul id="my-courses">
-                <!-- Os cursos adicionados aparecerão aqui -->
-            </ul>
+<main class="container my-5">
+    <!-- Cartões organizados horizontalmente -->
+    <div class="card">
+        <img src="img/html_css.jpeg" class="card-img-top" alt="HTML & CSS">
+        <div class="card-body">
+            <h5 class="card-title">Introdução a HTML & CSS</h5>
+            <p class="card-text">Aprenda a construir páginas web incríveis e responsivas do zero!</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
         </div>
     </div>
+    <div class="card">
+        <img src="img/js.png" class="card-img-top" alt="JavaScript">
+        <div class="card-body">
+            <h5 class="card-title">JavaScript para Iniciantes</h5>
+            <p class="card-text">Descubra como criar interatividade e lógica nas suas páginas web.</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/python.jpeg" class="card-img-top" alt="Python">
+        <div class="card-body">
+            <h5 class="card-title">Fundamentos de Python</h5>
+            <p class="card-text">Comece a programar com uma das linguagens mais populares do mundo!</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+        </div>
+    </div>
+</main>
 
-    <section>
-            <div id="acbox" class="accessibility-box">
-        
-                <div class="font-size-control">
-                    <button id="decrease-font" class="square-button">A-</button>
-                    <button id="increase-font" class="square-button">A+</button>
-                </div>
-                <div class="contrast-control">
-                    <button id="contrast-normal" class="square-button">A</button>
-                    <button id="contrast-yellow" class="square-button" style="background-color: yellow;">A</button>
-                    <button id="contrast-blue" class="square-button" style="background-color: blue; color: white;">A</button>
-                    <button id="contrast-black" class="square-button" style="background-color: black; color: yellow;">A</button>
-                </div>
-                <button id="reset" class="reset-button">Redefinir</button>
-            </div>
-        <button type="button" class="collapsible" id="collapsible">Acessibilidade</button>
-    </section>
-    
-    <script src="js/cursos.js"></script>
-    
-</body>
-
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

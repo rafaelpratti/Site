@@ -17,3 +17,49 @@
     font-size: 1.2rem;
     margin: 10px 0;
 }
+
+/* Centralização dos botões */
+.dashboard-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza os botões na horizontal */
+    justify-content: center;  /* Centraliza os botões na vertical */
+    gap: 20px;  /* Espaçamento entre os botões */
+    height: 100%;  /* Garante que a seção ocupe toda a altura disponível */
+}
+
+/* Estilo dos botões */
+.dashboard-button {
+    padding: 15px 30px;  /* Mais espaçamento nos botões */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px;  /* Define uma largura fixa para os botões */
+}
+
+/* Efeito hover nos botões */
+.dashboard-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);  /* Aumenta um pouco o botão no hover */
+}
+
+/* Caso de contraste amarelo */
+body.contrast-yellow .dashboard-button {
+    background-color: yellow;
+    color: black;
+}
+
+body.contrast-blue .dashboard-button {
+    background-color: blue;
+    color: white;
+}
+
+body.contrast-black .dashboard-button {
+    background-color: black;
+    color: yellow;
+}

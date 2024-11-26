@@ -2,8 +2,13 @@
 <?php
 session_start();
 
-if(isset($_SESSION)){
-    header("Location: dashboard.php");
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+if (isset($_SESSION['usuario_id'])) {
+    header("Location: dashboard.php"); // Redireciona para o dashboard
+    exit; // Garantir que o código abaixo não será executado
 }
 
 // Código de login (verificação de email e senha)
@@ -15,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = $_POST['senha'];
 
     // Consulta para verificar o usuário no banco
-    $stmt = $conn->prepare("SELECT id, nome, senha, role FROM usuario WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id, nome, senha, role FROM usuarios WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();

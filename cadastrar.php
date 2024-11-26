@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     // Verifica se o email já existe no banco
-    $emailCheckSql = "SELECT id FROM usuarios WHERE email = ?";
+    $emailCheckSql = "SELECT id FROM usuario WHERE email = ?";
     $stmt = $conn->prepare($emailCheckSql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -36,14 +36,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Erro: O email já está em uso. Por favor, utilize outro.";
     } else {
         // Insere o usuário no banco de dados
-        $insertSql = "INSERT INTO usuarios (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
+        $insertSql = "INSERT INTO usuario (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
         $stmtInsert = $conn->prepare($insertSql);
         $stmtInsert->bind_param("sss", $nome, $email, $senhaHash);
 
         if ($stmtInsert->execute()) {
             // Cadastro bem-sucedido, armazena a mensagem de sucesso e redireciona para a página de login
             $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso!";
-            header("Location: login.php");
+            header("Location: dashboard.php");
             exit;
         } else {
             echo "Erro ao cadastrar: " . $conn->error;

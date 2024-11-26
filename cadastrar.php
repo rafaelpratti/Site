@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-if (isset($_SESSION)){
+if(isset($_SESSION)){
     header("Location: dashboard.php");
 }
 
@@ -46,6 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($stmtInsert->execute()) {
             // Cadastro bem-sucedido, armazena a mensagem de sucesso e redireciona para a página de login
+            $_SESSION['usuario_id'] = $conn->insert_id; // Captura o ID do último registro inserido
+            $_SESSION['usuario_nome'] = $nome;
+            $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso!";
             $_SESSION['mensagem_sucesso'] = "Cadastro realizado com sucesso!";
             header("Location: dashboard.php");
             exit;

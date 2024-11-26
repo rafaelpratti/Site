@@ -2,6 +2,10 @@
 <?php
 session_start();
 
+if(isset($_SESSION)){
+    header("Location: dashboard.php");
+}
+
 // Código de login (verificação de email e senha)
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require_once 'db.php';

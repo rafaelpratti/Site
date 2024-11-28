@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $senha = $_POST['senha'];
 
     // Consulta para verificar o usuário no banco
-    $stmt = $conn->prepare("SELECT id, nome, senha, role FROM usuarios WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id, nome, senha, role FROM usuario WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();

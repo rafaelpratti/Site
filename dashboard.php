@@ -60,7 +60,7 @@ if (isset($_SESSION['mensagem_sucesso'])) {
 <!-- Botões de navegação -->
 <section>
     <div class="dashboard-buttons-container">
-        <form action="meus_cursos.php" method="get">
+        <form action="cursos.php" method="get">
             <button type="submit" class="dashboard-button">Meus Cursos</button>
         </form>
         

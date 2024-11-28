@@ -73,5 +73,3 @@
         ©2024 todos os direitos reservados!
     </footer>
 
-    </body>
-    </html>

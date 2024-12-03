@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
         // Verifica se o email já existe no banco
-        $emailCheckSql = "SELECT id FROM usuario WHERE email = ?";
+        $emailCheckSql = "SELECT id FROM aluno WHERE email = ?";
         $stmt = $conn->prepare($emailCheckSql);
         $stmt->bind_param("s", $email);
         $stmt->execute();
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $erros[] = "O email já está em uso. Por favor, utilize outro.";
         } else {
             // Insere o usuário no banco de dados
-            $insertSql = "INSERT INTO usuario (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
+            $insertSql = "INSERT INTO aluno (nome, email, senha, role) VALUES (?, ?, ?, 'aluno')";
             $stmtInsert = $conn->prepare($insertSql);
             $stmtInsert->bind_param("sss", $nome, $email, $senhaHash);
 

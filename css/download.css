@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    background: linear-gradient(90deg, #246219, #246219);
     padding: 15px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -22,15 +22,19 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Ajuste de espaçamento e cor da imagem */
 .sec1-div1 img {
-    width: 100px;
-    margin-bottom: 10px;
+    width: 100px; /* Mantém o tamanho da imagem consistente */
+    margin-bottom: 20px; /* Espaçamento maior abaixo da imagem */
+    margin-top: 20px; /* Espaçamento maior acima da imagem */
+    filter: brightness(0) saturate(100%) invert(21%) sepia(93%) saturate(553%) hue-rotate(96deg) brightness(70%) contrast(103%);
+    /* A cor do ícone agora está alinhada com o verde do header (#246219) */
 }
 
 .sec1-div1 span {
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -38,5 +42,14 @@ div>img {
     width: 120px;
     margin-bottom: 1.5em;
     margin-top: 1.5em;
+}
+
+/* Ajuste do texto para maior destaque */
+.sec1-div2 {
+    text-align: center;
+    font-size: 24px; /* Aumenta o tamanho do texto */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    margin-bottom: 20px; /* Espaçamento entre o texto e o botão */
+    color: #000000; /* Mantém a cor legível */
 }
 

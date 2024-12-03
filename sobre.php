@@ -2,8 +2,8 @@
 
     <section class="sec1">
         <div>
-            <h4>Conheça o Trilingo: O App para Aprender Programação!</h1>
-                <p>Bem-vindo ao Trilingo, sua plataforma confiável para aprender programação de forma eficaz e gratificante. No Trilingo, acreditamos que todos têm o potencial de se tornarem habilidosos programadores, e nosso objetivo é fornecer as ferramentas e recursos necessários para ajudá-lo a alcançar seus objetivos.</p>
+            <h4>Conheça o CodeQuest: O App para Aprender Programação!</h1>
+                <p>Bem-vindo ao CodeQuest, sua plataforma confiável para aprender programação de forma eficaz e gratificante. No Trilingo, acreditamos que todos têm o potencial de se tornarem habilidosos programadores, e nosso objetivo é fornecer as ferramentas e recursos necessários para ajudá-lo a alcançar seus objetivos.</p>
         </div>
 
     </section>
@@ -11,7 +11,7 @@
     <section class="sec2">
         <div>
             <h4>Quem Somos</h4>
-            <p>Nós, do Trilingo, somos um grupo de alunos de programação entusiasmados em compartilhar nosso conhecimento com outros aspirantes a programadores. Como estudantes que já passaram pelas trilhas tortuosas do aprendizado de programação, entendemos as dificuldades e desafios que os novatos enfrentam.</p>
+            <p>Nós, do CodeQuest, somos um grupo de alunos de programação entusiasmados em compartilhar nosso conhecimento com outros aspirantes a programadores. Como estudantes que já passaram pelas trilhas tortuosas do aprendizado de programação, entendemos as dificuldades e desafios que os novatos enfrentam.</p>
         </div>
 
         <div>
@@ -21,7 +21,7 @@
 
         <div>
             <h4>O Que Oferecemos</h4>
-            <p>No Trilingo, desenvolvemos uma variedade de recursos e cursos de programação que refletem nossa compreensão íntima das dificuldades enfrentadas pelos alunos. Nossos cursos são cuidadosamente estruturados e incluem uma mistura de instruções claras, exercícios práticos e desafios desenhados para superar as barreiras comuns no caminho do aprendizado.</p>
+            <p>No CodeQuest, desenvolvemos uma variedade de recursos e cursos de programação que refletem nossa compreensão íntima das dificuldades enfrentadas pelos alunos. Nossos cursos são cuidadosamente estruturados e incluem uma mistura de instruções claras, exercícios práticos e desafios desenhados para superar as barreiras comuns no caminho do aprendizado.</p>
         </div>
     </section>
 

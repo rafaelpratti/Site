@@ -52,21 +52,30 @@
 
 <body>
     <header>
-        <nav>
+    <nav>
             <ul class="menu">
                 <li><a href="index.php" class="logo"><img src="img/loguin.png" alt=""></a></li>
-        
             </ul>
         </nav>
 
         <nav>
             <ul class="menu">
-                <li><a href="login.php">Login</a></li>
-                <li><a href="cadastrar.php">Cadastrar</a></li>
+                <?php 
+                session_start(); // Certifique-se de que a sessão está iniciada
+                if (isset($_SESSION['usuario_id'])): ?>
+                    <!-- Usuário logado -->
+                    <li><a href="dashboard.php">Início</a></li>
+                    <li><a href="logout.php">Sair</a></li>
+                <?php else: ?>
+                    <!-- Usuário não logado -->
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="cadastrar.php">Cadastrar</a></li>
+                <?php endif; ?>
                 <li><a href="sobre.php">Sobre</a></li>
                 <li><a href="download.php">Download</a></li>
             </ul>
         </nav>
+
     </header>
 
     <footer class="footer">

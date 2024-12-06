@@ -27,21 +27,7 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-        nav {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 0.5rem;
-        }
-        nav a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
+        
         .unit {
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -52,8 +38,6 @@
         .unit h2 {
             font-size: 1.2rem;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
         .unit h2 .edit-icon {
             cursor: pointer;
@@ -108,8 +92,7 @@
 
         <div class="unit">
             <h2>
-                Unidade 1
-                <button class="edit-icon">✏️</button>
+                Unidade 1 <button class="edit-icon">✏️</button>
             </h2>
             <hr>
             <button>+ Adicionar exercício ou conteúdo</button>

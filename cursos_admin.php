@@ -17,7 +17,7 @@
 <div class="card">
     <img src="img/html_css.jpeg" alt="HTML & CSS">
     <div class="card-body">
-        <h2 class="card-title">Python Básico</h2>
+        <h2 class="card-title">HTML & CSS</h2>
         </div>
     </div>
 </div>

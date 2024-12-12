@@ -45,8 +45,7 @@ CREATE TABLE Realizaexercicio (
     fk_Aluno_id INT,
     fk_Exercicio_id INT,
     resposta_enviada VARCHAR(300),
-    data DATE,
-    tempo_gasto INTERVAL
+    data DATE
 );
 
 ALTER TABLE Unidade ADD CONSTRAINT FK_Unidade_2

@@ -16,7 +16,6 @@ header {
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255)
 }
 
 .menu {
@@ -26,7 +25,6 @@ a {
 .menu li a {
     padding: 0.4em;
     text-decoration: none;
-    color: white;
 }
 
 ul, li {
@@ -79,4 +77,3 @@ body.contrast-black {
     background-color: black;
     color: yellow;
 }
-

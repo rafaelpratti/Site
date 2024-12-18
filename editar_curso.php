@@ -72,7 +72,8 @@ if (isset($_GET['id'])) {
         <input type="number" name="tempo_conclusao" id="tempo_conclusao" value="<?php echo $curso['tempo_conclusao']; ?>" required>
         <br>
         <button type="submit">Atualizar Curso</button>
+        <a href="cursos_admin.php">Voltar</a>
     </form>
-    <a href="cursos_admin.php">Voltar</a>
+    
 </body>
 </html>

@@ -14,7 +14,7 @@ CREATE TABLE Curso (
     tempo_conclusao INT,
     titulo VARCHAR(30),
     dificuldade VARCHAR(10),
-    id INT PRIMARY KEY
+    id INT PRIMARY KEY AUTO_INCREMENT
 );
 
 CREATE TABLE Unidade (

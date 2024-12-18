@@ -1,4 +1,5 @@
 <?php include 'cabecalho_footer.php'; ?>
+
 <?php
 session_start();
 include 'db.php'; // Conexão com o banco de dados
@@ -41,12 +42,17 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excluir Curso</title>
+    <link rel="stylesheet" href="styles_excluir_curso.css"> <!-- Novo CSS -->
+    <link rel="stylesheet" href="styles_global.css"> <!-- Arquivo CSS global -->
 </head>
 <body>
-    <h1>Tem certeza que deseja excluir o curso: <?php echo $curso['titulo']; ?>?</h1>
-    <form action="" method="POST">
-        <button type="submit" name="confirmar">Sim, excluir</button>
-        <a href="cursos_admin.php">Cancelar</a>
-    </form>
+    <div class="container">
+        <h1>Tem certeza que deseja excluir o curso: <?php echo $curso['titulo']; ?>?</h1>
+        <form action="" method="POST">
+            <button type="submit" name="confirmar">Sim, excluir</button>
+            <a href="cursos_admin.php">Cancelar</a>
+        </form>
+    </div>
 </body>
 </html>
+

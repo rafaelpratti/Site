@@ -61,7 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="number" name="tempo_conclusao" id="tempo_conclusao" required>
         <br>
         <button type="submit">Adicionar Curso</button>
+        <a href="cursos_admin.php">Voltar</a>
     </form>
-    <a href="cursos_admin.php">Voltar</a>
+    
 </body>
 </html>

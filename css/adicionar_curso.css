@@ -1,0 +1,84 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #246219;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #246219;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+input[type="number"]:focus {
+    border-color: #5aaf5a;
+    box-shadow: 0 0 5px #a3dca3;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #246219;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #5aaf5a;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #246219;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5aaf5a;
+    text-decoration: underline;
+}

@@ -1,124 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    color: #333;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-h1,
-h2 {
     text-align: center;
-    color: #333;
 }
 
-.form-group {
-    margin-bottom: 15px;
+/* Header e Footer já definidos pelo 'cabecalho_footer.php' */
+/* Estilização principal */
+h1 {
+    color: #246219; /* Verde escuro */
+    margin: 20px 0;
+    font-size: 2em;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+a.btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: #246219;
+    text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+a.btn:hover {
+    background-color: #3b6f34; /* Verde mais claro */
 }
 
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #28a745;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-
-li button {
-    background-color: #007bff;
-    border: none;
-    padding: 5px 10px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-li button:hover {
-    background-color: #0056b3;
-}
-
-li button.delete {
-    background-color: #dc3545;
-}
-
-li button.delete:hover {
-    background-color: #c82333;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5vh;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-.card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+/* Tabela estilizada */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
 }
 
-.cursos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+thead {
+    background-color: #246219;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e8f5e9; /* Verde suave */
+}
+
+td a {
+    text-decoration: none;
+    color: #2a4d23;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+td a:hover {
+    color: #3b6f34;
+}
+
+td:last-child {
+    white-space: nowrap;
+}
+
+/* Mensagem de nenhum curso */
+td[colspan="6"] {
+    font-style: italic;
+    color: #777;
 }

@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
             <div class='course'>
                 <div>
                     <h2>{$row['titulo']}</h2>
-                    <p>{$row['descricao']}</p>
+                    <p>Descrição: {$row['descricao']}</p>
                     <p>Dificuldade: {$row['dificuldade']}</p>
                     <p>Tempo estimado: {$row['tempo_conclusao']} horas</p>
                 </div>

@@ -31,8 +31,13 @@ $stmt_check->execute();
 $result_check = $stmt_check->get_result();
 
 if ($result_check->num_rows > 0) {
+    // Mensagem de alerta
+    echo "<div class='container'>";
+    echo "<div class='alert'>";
     echo "<p>Você já está inscrito neste curso.</p>";
+    echo "</div>";
     echo "<a href='cursos.php'>Voltar para meus cursos</a>";
+    echo "</div>";
 } else {
     // Inserir o curso escolhido na tabela Realizacaodecurso
     $query_insert = "

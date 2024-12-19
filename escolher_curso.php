@@ -20,12 +20,12 @@ $result = $conn->query($query);
 echo "<h1>Escolher um Curso</h1>";
 
 if ($result->num_rows > 0) {
-    echo "<ul>";
+    echo "<ul class='course-list'>"; // Adicionada a classe 'course-list'
     while ($row = $result->fetch_assoc()) {
         echo "
             <li>
                 <h2>{$row['titulo']}</h2>
-                <p>{$row['descricao']}</p>
+                <p>Descrição: {$row['descricao']}</p>
                 <p>Dificuldade: {$row['dificuldade']}</p>
                 <p>Tempo estimado: {$row['tempo_conclusao']} horas</p>
                 <form action='inscrever_curso.php' method='POST'>
@@ -39,6 +39,7 @@ if ($result->num_rows > 0) {
 } else {
     echo "<p>Nenhum curso disponível no momento.</p>";
 }
+
 
 // Fechar conexão
 $conn->close();

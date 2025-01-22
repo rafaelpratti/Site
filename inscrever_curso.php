@@ -30,13 +30,13 @@ $stmt_check->bind_param('ii', $curso_id, $user_id);
 $stmt_check->execute();
 $result_check = $stmt_check->get_result();
 
+echo "<div class='container'>";
+
 if ($result_check->num_rows > 0) {
-    // Mensagem de alerta
-    echo "<div class='container'>";
-    echo "<div class='alert'>";
+    // Mensagem de alerta estilizada
+    echo "<div class='alert alert-warning'>";
+    echo "<h3>Atenção!</h3>";
     echo "<p>Você já está inscrito neste curso.</p>";
-    echo "</div>";
-    echo "<a href='cursos.php'>Voltar para meus cursos</a>";
     echo "</div>";
 } else {
     // Inserir o curso escolhido na tabela Realizacaodecurso
@@ -49,14 +49,24 @@ if ($result_check->num_rows > 0) {
     $stmt_insert->bind_param('ii', $curso_id, $user_id);
 
     if ($stmt_insert->execute()) {
-        echo "<p>Inscrição realizada com sucesso no curso!</p>";
-        echo "<a href='cursos.php'>Ir para meus cursos</a>";
+        // Mensagem de sucesso estilizada
+        echo "<div class='alert alert-success'>";
+        echo "<h3>Sucesso!</h3>";
+        echo "<p>Você se inscreveu no curso com sucesso.</p>";
+        echo "</div>";
     } else {
-        echo "<p>Erro ao inscrever-se no curso. Tente novamente.</p>";
+        // Mensagem de erro estilizada
+        echo "<div class='alert alert-danger'>";
+        echo "<h3>Erro!</h3>";
+        echo "<p>Ocorreu um erro ao tentar inscrever-se no curso. Tente novamente.</p>";
+        echo "</div>";
     }
 
     $stmt_insert->close();
 }
+
+echo "<a href='cursos.php' class='button'>Voltar para meus cursos</a>";
+echo "</div>";
 
 $stmt_check->close();
 $conn->close();

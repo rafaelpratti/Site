@@ -36,17 +36,18 @@ if ($result->num_rows > 0) {
                     <p>Dificuldade: {$row['dificuldade']}</p>
                     <p>Tempo estimado: {$row['tempo_conclusao']} horas</p>
                 </div>
-                <form action='inscrever_curso.php' method='POST'>
-                    <input type='hidden' name='curso_id' value='{$row['id']}'>
-                    <button type='submit' disabled>Já Inscrito</button> <!-- Desabilita o botão para cursos já inscritos -->
-                </form>
+                <div class='course-actions'>
+                    <!-- Formulário para excluir curso -->
+                    <form action='sair_curso.php' method='POST' style='display: inline;'>
+                        <input type='hidden' name='curso_id' value='{$row['id']}'>
+                        <button type='submit' class='button delete'>Excluir Curso</button>
+                    </form>
+                </div>
             </div>
         ";
     }
     echo "</div>";
 } else {
-    // Se o usuário não estiver inscrito em nenhum curso
-    echo "<p>Você não está inscrito em nenhum curso ainda.</p>";
 }
 
 // Fechar conexão
@@ -57,5 +58,3 @@ $conn->close();
 <section class="add-course">
     <a href="escolher_curso.php" class="button">Escolher um Curso</a>
 </section>
-
-

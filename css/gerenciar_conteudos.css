@@ -1,0 +1,72 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header e Footer já definidos pelo 'cabecalho_footer.php' */
+/* Estilização principal */
+h1 {
+    color: #246219; /* Verde escuro */
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+a.btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: #246219;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* Tabela estilizada */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #246219;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td a {
+    text-decoration: none;
+    color: #2a4d23;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+td:last-child {
+    white-space: nowrap;
+}
+
+/* Mensagem de nenhum curso */
+td[colspan="6"] {
+    font-style: italic;
+    color: #777;
+}

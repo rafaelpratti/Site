@@ -51,29 +51,60 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Curso</title>
+    <style>
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1d7a1d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button-container a:hover {
+            background-color: #155a15;
+        }
+    </style>
 </head>
 <body>
-    <h1>Editar Curso: <?php echo $curso['titulo']; ?></h1>
-    <form action="" method="POST">
-        <label for="titulo">Título:</label>
-        <input type="text" name="titulo" id="titulo" value="<?php echo $curso['titulo']; ?>" required>
-        <br>
-        <label for="descricao">Descrição:</label>
-        <textarea name="descricao" id="descricao" required><?php echo $curso['descricao']; ?></textarea>
-        <br>
-        <label for="dificuldade">Dificuldade:</label>
-        <select name="dificuldade" id="dificuldade">
-            <option value="Fácil" <?php echo ($curso['dificuldade'] == 'Fácil') ? 'selected' : ''; ?>>Fácil</option>
-            <option value="Médio" <?php echo ($curso['dificuldade'] == 'Médio') ? 'selected' : ''; ?>>Médio</option>
-            <option value="Difícil" <?php echo ($curso['dificuldade'] == 'Difícil') ? 'selected' : ''; ?>>Difícil</option>
-        </select>
-        <br>
-        <label for="tempo_conclusao">Tempo de Conclusão (em horas):</label>
-        <input type="number" name="tempo_conclusao" id="tempo_conclusao" value="<?php echo $curso['tempo_conclusao']; ?>" required>
-        <br>
-        <button type="submit">Atualizar Curso</button>
-        <a href="cursos_admin.php">Voltar</a>
-    </form>
-    
+    <div class="form-container">
+        <h1>Editar Curso: <?php echo $curso['titulo']; ?></h1>
+        <form action="" method="POST">
+            <label for="titulo">Título:</label>
+            <input type="text" name="titulo" id="titulo" value="<?php echo $curso['titulo']; ?>" required>
+            <br>
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" required><?php echo $curso['descricao']; ?></textarea>
+            <br>
+            <label for="dificuldade">Dificuldade:</label>
+            <select name="dificuldade" id="dificuldade">
+                <option value="Fácil" <?php echo ($curso['dificuldade'] == 'Fácil') ? 'selected' : ''; ?>>Fácil</option>
+                <option value="Médio" <?php echo ($curso['dificuldade'] == 'Médio') ? 'selected' : ''; ?>>Médio</option>
+                <option value="Difícil" <?php echo ($curso['dificuldade'] == 'Difícil') ? 'selected' : ''; ?>>Difícil</option>
+            </select>
+            <br>
+            <label for="tempo_conclusao">Tempo de Conclusão (em horas):</label>
+            <input type="number" name="tempo_conclusao" id="tempo_conclusao" value="<?php echo $curso['tempo_conclusao']; ?>" required>
+            <br>
+            <button type="submit">Atualizar Curso</button>
+            <a href="cursos_admin.php">Voltar</a>
+        </form>
+
+        <div class="button-container">
+            <h2>Gerenciar Unidades</h2>
+            <a href="gerenciar_unidades.php?curso_id=<?php echo $curso['id']; ?>">Gerenciar Unidades do Curso</a>
+        </div>
+    </div>
 </body>
 </html>

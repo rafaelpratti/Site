@@ -23,6 +23,12 @@ $result = $conn->query($sql);
 </head>
 <body>
     <h1>Administração de Cursos</h1>
+
+    <!-- Botão de Voltar para o Dashboard -->
+    <div class="button-container">
+        <a href="dashboard.php" class="btn">Voltar para o Dashboard</a>
+    </div>
+
     <a href="adicionar_curso.php" class="btn">Adicionar Novo Curso</a>
     <table>
         <thead>
